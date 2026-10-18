@@ -463,7 +463,7 @@ function openProduct(id){
   <div class="detailBody">
    <h2>${p.name}</h2>
    <div class="detailPrice">${money(p.price)} <span class="detailOld">${money(p.old)}</span> <span class="detailDiscount">${Math.max(0,Math.round((1-p.price/Math.max(p.old,p.price))*100))}% OFF</span></div>
-   <div class="detailRating"><b>★ ${p.rating}</b> &nbsp; <span>${Number(p.reviews||0).toLocaleString()} ratings & reviews</span></div>
+   <div class="detailRating"><b>★ ${p.rating}</b> &nbsp; <span>${Number(p.reviews||500).toLocaleString()} ratings & reviews</span></div>
    <div class="detailAssurance">
     <div><b>↩</b><span>7 Day<br>Returns</span></div>
     <div><b>✓</b><span>Secure<br>Payments</span></div>
